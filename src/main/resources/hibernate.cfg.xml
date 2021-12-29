@@ -16,5 +16,7 @@
 
         <mapping class="ru.job4j.hibernate.model.Brand" />
         <mapping class="ru.job4j.hibernate.model.Model" />
+        <mapping class="ru.job4j.hibernate.manytomany.Author" />
+        <mapping class="ru.job4j.hibernate.manytomany.Book" />
     </session-factory>
 </hibernate-configuration>
