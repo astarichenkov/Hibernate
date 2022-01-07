@@ -20,5 +20,6 @@
         <mapping class="ru.job4j.hibernate.manytomany.Book" />
         <mapping class="ru.job4j.hibernate.lazy.Mark" />
         <mapping class="ru.job4j.hibernate.lazy.CarModel" />
+        <mapping class="ru.job4j.hibernate.hql.Candidate" />
     </session-factory>
 </hibernate-configuration>
