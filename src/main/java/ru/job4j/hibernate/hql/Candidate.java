@@ -12,6 +12,9 @@ public class Candidate {
     private int experience;
     private int salary;
 
+    @OneToOne
+    private Base base;
+
     public Candidate() {
     }
 
@@ -23,6 +26,10 @@ public class Candidate {
         return candidate;
     }
 
+    public void setBase(Base base) {
+        this.base = base;
+    }
+
     @Override
     public String toString() {
         return "Candidate{"
@@ -30,6 +37,7 @@ public class Candidate {
                 + ", name='" + name + '\''
                 + ", experience=" + experience
                 + ", salary=" + salary
+                + ", base=" + base
                 + '}';
     }
 }
