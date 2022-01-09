@@ -35,7 +35,11 @@ public class HbmRun {
 
             query = session.createQuery("from Candidate c where c.id = :fId");
             query.setParameter("fId", 2);
-            System.out.println(query.uniqueResult());
+            System.out.println("CandidateById: " + query.uniqueResult());
+
+            query = session.createQuery("from Candidate c where c.name = :fName");
+            query.setParameter("fName", "Nikolay");
+            System.out.println("CandidateByName: " + query.uniqueResult());
 
 
             Transaction txn = session.beginTransaction();
