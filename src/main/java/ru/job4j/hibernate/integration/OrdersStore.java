@@ -120,15 +120,4 @@ public class OrdersStore {
         }
         return rsl;
     }
-
-//    @Override
-//    public List<Item> findByName(String key) {
-//        Session session = sf.openSession();
-//        session.beginTransaction();
-//        List<Item> result = session.createQuery("from ru.job4j.tracker.model.Item WHERE name = :param")
-//                .setParameter("param", key).list();
-//        session.getTransaction().commit();
-//        session.close();
-//        return result;
-//    }
 }
